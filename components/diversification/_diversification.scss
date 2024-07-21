@@ -20,9 +20,6 @@
   padding: 20px;
 
   &:hover {
-   /* for adaptive
-    background-color: #30363a;*/
-
     > .box-icon-divers {
       background: linear-gradient(
                       to bottom right,
@@ -30,10 +27,6 @@
                       #5CE4CF
       );
 
-      /*for adaptive
-      > .icon-divers {
-        color: #30363a;
-      }*/
     }
 
     > .text-divers {
@@ -41,6 +34,22 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  }
+}
+
+.link-divers {
+  > .box-icon-divers.active {
+    background: linear-gradient(
+                    to bottom right,
+                    #99A9FF,
+                    #5CE4CF
+    );
+  }
+
+  > .text-divers.active {
+    background: linear-gradient(94.32deg, #99A9FF 0%, #5CE4CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

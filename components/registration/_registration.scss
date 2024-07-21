@@ -115,4 +115,14 @@
     margin-left: 30px;
     color: $color-salad2;
   }
+
+  &:hover {
+    > .reg-text-btn {
+      color: $color-salad2;
+    }
+
+    > .arrow-right-green {
+      color: $color-purple2;
+    }
+  }
 }
