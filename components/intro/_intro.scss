@@ -1,0 +1,22 @@
+.intro {
+  padding-top: 90px;
+}
+
+.page-title {
+  @include fonts($ginora-sans-bold-font, $semi-mega-font, $primary-title-color, $h1-title-line-height);
+  background: conic-gradient(from 180deg at 50% 50%, $secondary-color -160.13deg, $primary-color 42.37deg, $secondary-color 199.87deg, $primary-color 402.37deg);
+  background-clip: text;
+
+  > .ai {
+    color: transparent;
+  }
+}
+
+.box-spiral {
+  @include rowing(flex-end);
+  max-height: 190px;
+
+  > .spiral {
+    transform: translateY(-70px);
+  }
+}

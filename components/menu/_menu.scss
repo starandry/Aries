@@ -1,0 +1,34 @@
+.menu {
+  padding: 31px 20px;
+  background-color: $color-grey;
+}
+
+.menu-list {
+  @include rowing(space-between);
+
+  > .menu-list-left,
+  > .menu-list-right {
+    display: none;
+  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.logo {
+  @include sizes(85px, 25px);
+  color: $color-white;
+}
+
+.box-icon-menu {
+  @include sizes(20px, 20px);
+  display: inline-block;
+  color: $color-grey;
+  background: conic-gradient(from 90deg at 50% 50%, $secondary-color -160.13deg, $primary-color 42.37deg, $secondary-color 199.87deg, $primary-color 402.37deg);
+
+  > .icon-menu {
+    @include sizes(100%, 100%);
+  }
+}
+

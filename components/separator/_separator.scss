@@ -1,0 +1,18 @@
+.separator {
+  @include sizes(100%, 1px);
+  background: linear-gradient(
+                  to right,
+                  $color-clear 0%,
+                  $color-purple3 21.14%,
+                  $color-salad3 80%,
+                  $color-clear 100%
+  );
+}
+
+.separator.-jobs {
+  background: linear-gradient(
+                  to right,
+                  $color-purple3,
+                  $color-salad3
+  );
+}

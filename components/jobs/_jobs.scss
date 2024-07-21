@@ -1,0 +1,102 @@
+.jobs-title {
+  @include fonts($ginora-sans-bold-font, $semi-mega-font, $primary-title-color, $h1-title-line-height);
+  padding: 100px 0 60px;
+}
+
+.wrap-jobs {
+  width: 300px;
+  margin-inline: auto;
+
+  > .categories-title {
+    @include fonts($main-font, $normal-font, $primary-title-color);
+    padding-bottom: 30px;
+  }
+}
+
+.item-jobs {
+  padding-bottom: 20px;
+
+  > .link-jobs {
+    @include rowing(space-between);
+  }
+}
+
+.text-job {
+  @include fonts($main-font, $small-font, $color-grey3);
+
+  &:hover {
+    color: $color-purple2;
+  }
+}
+
+.active-text-lob {
+  color: $color-purple2;
+}
+
+.green-long-right-arrow {
+  @include sizes(30px, 20px);
+  color: $color-salad2;
+}
+
+.card-jobs {
+  @include rowing(null,  null, column);
+  padding: 40px 0;
+
+  > .inscription-jobs {
+    @include fonts($main-font, $semi-mini-font, $color-grey3, $inscription-line-height);
+    padding-bottom: 10px;
+    letter-spacing: 4px;
+    opacity: .7;
+  }
+}
+
+.link-card-jobs {
+  @include rowing(space-between,  center);
+
+  > .card-title-jobs {
+    @include fonts($main-font, $normal-font, $primary-title-color, $h3-title-line-height);
+
+    &:hover {
+      background: linear-gradient(92.73deg, $color-purple2 0%, $color-salad2 100%);
+      background-clip: text;
+      color: $color-clear;
+    }
+  }
+
+  > .active-title-jobs {
+    background: linear-gradient(92.73deg, $color-purple2 0%, $color-salad2 100%);
+    background-clip: text;
+    color: $color-clear;
+  }
+}
+
+.desc-jobs {
+  @include fonts($gilroy-medium-font, $semi-mini-font, $color-grey3, $position-line-height);
+  padding-top: 20px;
+  opacity: .7;
+}
+
+.link-jobs-card {
+  @include rowing(null, center);
+  padding: 60px 0 100px;
+
+  &:hover {
+    > .text-jobs {
+      color: $color-salad2;
+    }
+
+    > .arrow-right-green {
+      color: $color-purple2;
+    }
+  }
+
+  > .text-jobs {
+    @include fonts($ginora-sans-semi-bold-font, $extra-mini-font, $color-purple2);
+    padding-right: 10px;
+  }
+
+  > .arrow-right-green {
+    @include sizes(25px, 12px);
+    color: $color-salad2;
+  }
+}

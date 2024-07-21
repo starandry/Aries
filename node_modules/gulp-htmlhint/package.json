@@ -1,0 +1,60 @@
+{
+  "name": "gulp-htmlhint",
+  "version": "4.0.2",
+  "description": "A plugin for Gulp",
+  "keywords": [
+    "gulpplugin"
+  ],
+  "homepage": "https://github.com/bezoerb/gulp-htmlhint",
+  "bugs": {
+    "url": "https://github.com/bezoerb/gulp-htmlhint/issues"
+  },
+  "author": "Ben Zörb (https://github.com/bezoerb)",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bezoerb/gulp-htmlhint.git"
+  },
+  "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "test": "xo && nyc mocha test/*.js"
+  },
+  "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "beeper": "^2.0.0",
+    "fancy-log": "^1.3.2",
+    "htmlhint": "^1.1.2",
+    "plugin-error": "^1.0.1",
+    "strip-ansi": "^6.0.0",
+    "strip-json-comments": "^3.1.1",
+    "through2": "^3.0.1",
+    "vinyl": "^2.2.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "htmlhint-stylish": "^1.0.3",
+    "mocha": "^8.4.0",
+    "nyc": "^14.1.1",
+    "should": "^13.2.3",
+    "vinyl-fs": "^3.0.3",
+    "xo": "^0.36.1"
+  },
+  "peerDependencies": {
+    "htmlhint": "^0.14.0 || ^1.0.0"
+  },
+  "xo": {
+    "space": 2
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
+}

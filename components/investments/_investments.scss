@@ -1,0 +1,9 @@
+.investments-title {
+  @include fonts($main-font, $semi-large-font, $primary-title-color, $h2-title-line-height);
+  padding: 40px 0 30px;
+}
+
+.investments-desc {
+  @include fonts($secondary-font, $extra-mini-font, $secondary-title-color, $paragraph-line-height);
+  padding-bottom: 60px;
+}

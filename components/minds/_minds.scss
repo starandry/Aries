@@ -1,0 +1,67 @@
+.list-geniuses {
+  @include rowing(space-between);
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.genius {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+
+  > .name {
+    @include fonts($main-font, $small-font, $color-grey3);
+    padding: 20px 0 10px;
+  }
+
+  > .position {
+    @include fonts($gilroy-light-font, $extra-mini-font, $color-grey3, $position-line-height);
+  }
+}
+
+.gen-mark {
+  padding-top: 30px;
+}
+
+.gen-chris {
+  padding-top: 20px;
+}
+
+.gen-roberto {
+  padding-top: 50px;
+}
+
+.minds-title {
+  @include fonts($main-font, $semi-large-font, $primary-title-color, $h2-title-line-height);
+  padding: 60px 0  30px;
+}
+
+.minds-desc {
+  @include fonts($secondary-font, $semi-semi-small-font, $secondary-title-color, $item-divers-line-height);
+  padding-bottom: 30px;
+}
+
+.link-minds {
+  @include rowing(null, center);
+  padding-bottom: 60px;
+
+  &:hover {
+    > .text-robotics {
+      color: $color-salad2;
+    }
+
+    > .arrow-right-green {
+      color: $color-purple2;
+    }
+  }
+
+  > .text-robotics {
+    @include fonts($ginora-sans-semi-bold-font, $extra-mini-font, $color-purple2);
+    padding-right: 50px;
+  }
+
+  > .arrow-right-green {
+    @include sizes(25px, 12px);
+    color: $color-salad2;
+  }
+}

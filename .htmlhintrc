@@ -1,0 +1,31 @@
+{
+  "tag-pair": true,  //Включает проверку парных тегов
+  "tag-self-close": true,
+  "tag-self-close-ignore": [ "br" ], // Исключаем проверку самозакрытия для br
+  "href-abs-or-rel": true,
+  "id-unique": true,
+  "inline-style-disabled": false,
+  "tagname-lowercase": false,   // Отключаем правило tagname-lowercase
+  "attr-value-double-quotes": true,
+  "attr-no-duplication": true,
+  "attr-lowercase": true,
+  "doctype-first": true,
+  "src-not-empty": true,
+  "img-alt-require": true,
+  "title-require": true,
+  "head-script-disabled": true,
+  "attr-unsafe-chars": true,
+  "style-disabled": true,
+  "inline-script-disabled": true,
+  "spec-char-escape": true,
+  "doctype-html5": true,
+  "id-class-value": true,
+  "id-class-ad-disabled": true,
+  "attr-new-line": true,
+  "space-tab-mixed-disabled": true,
+  "attr-no-uc-list": true,
+  "id-class-no-ad": true,
+  "href-abs-or-rel": true,
+  "doctype-first": true,
+  "tag-self-close": true
+}

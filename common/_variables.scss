@@ -1,0 +1,51 @@
+/*COLORS*/
+$color-grey: #232526 !default;
+$color-grey2: #1D1D1D !default;
+$color-grey3: #B8B8B8 !default;
+$color-grey4: #565656 !default;
+$color-white: #fff !default;
+$color-white2: #F4F4F4 !default;
+$color-purple: #8093FF !default;
+$color-purple2: #99A9FF !default;
+$color-purple3: #7D9BFA !default;
+$color-salad : #66FFE6 !default;
+$color-salad2 : #5CE4CF !default;
+$color-salad3 : #60DBD4 !default;
+$color-clear : transparent !default;
+
+$primary-color: $color-purple !default;
+$secondary-color: $color-salad !default;
+$primary-title-color: $color-white2 !default;
+$secondary-title-color: $color-grey3 !default;
+
+/*FONTS*/
+$ginora-sans-regular-font: GinoraSans-regular, sans-serif !default;
+$gilroy-regular-font: Gilroy-regular, sans-serif !default;
+$ginora-sans-light-font: GinoraSans-light, sans-serif !default;
+$ginora-sans-bold-font: GinoraSans-bold, sans-serif !default;
+$ginora-sans-semi-bold-font: GinoraSans-semi-bold, sans-serif !default;
+$gilroy-light-font: Gilroy-light, sans-serif !default;
+$gilroy-medium-font: Gilroy-medium, sans-serif !default;
+$main-font: $ginora-sans-regular-font !default;
+$secondary-font: $gilroy-regular-font !default;
+
+$semi-mini-font: 12px !default;
+$mini-font: 14px !default;
+$extra-mini-font: 16px !default;
+$semi-semi-small-font: 19px !default;
+$small-font: 20px !default;
+$normal-font: 26px !default;
+$semi-large-font: 36px !default;
+$semi-mega-font: 42px !default;
+
+$position-line-height: 16px !default;
+$inscription-line-height: 18px !default;
+$paragraph-line-height: 24px !default;
+$item-divers-line-height: 26px !default;
+$h1-title-line-height: 56px !default;
+$h2-title-line-height: 44px !default;
+$h3-title-line-height: 32px !default;
+
+/*BREAKPOINTS*/
+$breakpoint_sm: 576px !default;
+$breakpoint_xxl: 1160px !default;

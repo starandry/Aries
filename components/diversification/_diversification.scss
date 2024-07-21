@@ -1,0 +1,128 @@
+.divers-title {
+  @include fonts($main-font, $semi-large-font, $primary-title-color, $h2-title-line-height);
+  padding: 20px 0 40px;
+}
+
+.brand-list {
+  @include rowing();
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
+.divers-list-1,
+.divers-list-2 {
+  @include rowing(space-between);
+  flex-wrap: wrap;
+}
+
+.link-divers {
+  @include rowing(null, center);
+  padding: 20px;
+
+  &:hover {
+   /* for adaptive
+    background-color: #30363a;*/
+
+    > .box-icon-divers {
+      background: linear-gradient(
+                      to bottom right,
+                      #99A9FF,
+                      #5CE4CF
+      );
+
+      /*for adaptive
+      > .icon-divers {
+        color: #30363a;
+      }*/
+    }
+
+    > .text-divers {
+      background: linear-gradient(94.32deg, #99A9FF 0%, #5CE4CF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.box-icon-divers {
+  background-color: $color-grey3;
+
+  > .icon-divers {
+    @include sizes(20px, 20px);
+    color: $color-grey2;
+  }
+
+  > .atom {
+    @include sizes(null, 18.2px);
+  }
+
+  > .oracle {
+    @include sizes(null, 19.05px);
+  }
+
+  > .tindo {
+    @include sizes(null, 18.26px);
+  }
+
+  > .ordix {
+    @include sizes(null, 17.27px);
+  }
+
+  > .raxon {
+    @include sizes(null, 16.8px);
+  }
+}
+
+.box-atom {
+  @include sizes(null, 18px);
+}
+
+.box-oracle {
+  @include sizes(null, 18px);
+  margin-right: 4px;
+}
+
+.box-tindo {
+  @include sizes(null, 18px);
+}
+
+.box-kawaski {
+  @include sizes(null, 20px);
+  margin-right: 4px;
+}
+
+.box-jarvice {
+  @include sizes(null, 20px);
+}
+
+.box-cypher {
+  @include sizes(null, 20px);
+  margin-right: 7px;
+}
+
+.box-ordix {
+  @include sizes(null, 17.2px);
+}
+
+.box-raxon {
+  @include sizes(null, 16.7px);
+  margin-right: 10px;
+}
+
+.text-divers {
+  @include fonts($ginora-sans-light-font, $normal-font,$color-grey3, $item-divers-line-height);
+}
+
+.text-raxon {
+  padding-right: 5px;
+}
+
+.text-atom,
+.text-jarvice {
+  padding-left: 6px;
+}
+
+.text-tindo,
+.text-ordix {
+  padding-left: 10px;
+}

@@ -1,0 +1,94 @@
+.title-resources {
+  @include fonts($main-font, $semi-large-font, $primary-title-color, $h2-title-line-height);
+  padding: 20px 0  60px;
+}
+
+.cards-resources {
+  padding: 0 20px;
+}
+
+.date {
+  @include fonts($secondary-font, $semi-mini-font, $secondary-title-color, $position-line-height);
+  display: inline-block;
+  padding: 30px 0 10px;
+}
+
+.title-card-resources {
+  @include fonts($main-font, $normal-font, $secondary-title-color, $h3-title-line-height);
+  padding-bottom: 60px;
+
+  &:hover {
+    background: linear-gradient(96.97deg, $color-purple2 20.47%, $color-salad2 100%);
+    background-clip: text;
+    -webkit-text-fill-color: $color-clear
+  }
+}
+
+.active-card-resources {
+  background: linear-gradient(96.97deg, $color-purple2 20.47%, $color-salad2 100%);
+  background-clip: text;
+  -webkit-text-fill-color: $color-clear
+}
+
+.swiper-nav {
+  @include rowing(end);
+  padding-bottom: 60px;
+}
+
+.box-btn-right {
+  @include sizes(62px, 8px);
+  display: inline-flex;
+  color: $color-grey2;
+  background: linear-gradient(to right, $color-purple2, $color-salad2);
+
+  > .arrow-btn-right {
+    @include sizes(100%, 100%);
+  }
+}
+
+.box-btn-left {
+  @include sizes(31px, 8px);
+  display: inline-flex;
+  margin-right: 20px;
+  color: $color-grey2;
+  background: linear-gradient(to left, $color-purple2, $color-salad2);
+}
+
+.arrow-btn-left {
+  @include sizes(100%, 100%);
+}
+
+.swiper-button-disabled.box-btn-right {
+  background: linear-gradient(to right, rgba(92, 228, 207, 0.15), rgba(153, 169, 255, 0.4));
+}
+
+.swiper-button-disabled.box-btn-left {
+  background: linear-gradient(to left, rgba(92, 228, 207, 0.15), rgba(153, 169, 255, 0.4));
+}
+
+
+
+.link-resources {
+  @include rowing(null, center);
+  padding: 20px 0 100px;
+
+  &:hover {
+    > .text-resources {
+      color: $color-salad2;
+    }
+
+    > .arrow-right-green {
+      color: $color-purple2;
+    }
+  }
+
+  .text-resources {
+    @include fonts($ginora-sans-semi-bold-font, $extra-mini-font, $color-purple2);
+    padding-right: 10px;
+  }
+
+  > .arrow-right-green {
+    @include sizes(25px, 12px);
+    color: $color-salad2;
+  }
+}

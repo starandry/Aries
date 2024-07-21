@@ -1,0 +1,22 @@
+@mixin rowing($dist: null, $align: null, $direct: null) {
+  display: flex;
+  justify-content: $dist;
+  align-items: $align;
+  flex-direction: $direct;
+}
+
+@mixin sizes($numb: null, $second-numb: null, $third-numb: null, $fourth-numb: null) {
+  width: $numb;
+  height: $second-numb;
+  border-radius: $third-numb;
+  margin: $fourth-numb;
+}
+
+@mixin fonts ($font-family: null, $font-size: null, $color: null, $line-height: null) {
+  font: {
+    family: $font-family;
+    size: $font_size;
+  };
+  color: $color;
+  line-height: $line-height;
+}

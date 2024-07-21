@@ -1,0 +1,118 @@
+.title-reg {
+  @include sizes(330px);
+  @include fonts($main-font, $semi-large-font, $primary-title-color, $h2-title-line-height);
+  background: conic-gradient(from 180deg at 50% 50%, $secondary-color -160.13deg, $primary-color 42.37deg, $secondary-color 199.87deg, $primary-color 402.37deg);
+  background-clip: text;
+  -webkit-text-fill-color: $color-clear;
+}
+
+.desc-reg {
+  @include fonts($secondary-font, $extra-mini-font, $secondary-title-color, $item-divers-line-height);
+  padding: 20px 0 60px;
+}
+
+.group-message {
+  @include rowing(null, null, column);
+}
+
+.group-name,
+.group-email {
+  @include rowing(null,  null, column);
+  position: relative;
+
+  &::before {
+    @include sizes(80px, 3px);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: 10px;
+    background: linear-gradient(90deg, $color-purple2 0%, $color-salad2 100%);
+  }
+}
+
+.label-name,
+.label-email,
+.text-message {
+  @include fonts($secondary-font, $mini-font, $color-grey3, $position-line-height);
+  padding-left: 10px;
+}
+
+.name-text,
+.email-text {
+  height: 24px;
+}
+
+.name-text,
+.email-text,
+.textarea {
+  margin-bottom: 40px;
+  padding: 0 10px;
+  border: 1px solid $color-grey2;
+  border-bottom-color: $color-grey4;
+  background-color: $color-grey2;
+  color: $color-grey3;
+}
+
+.input-sizer {
+  display: inline-grid;
+  vertical-align: top;
+  align-items: center;
+  position: relative;
+
+}
+.input-sizer.stacked {
+  align-items: stretch;
+}
+.input-sizer.stacked::after,
+.input-sizer.stacked input,
+.input-sizer.stacked .textarea {
+  grid-area: 2/1;
+}
+.input-sizer::after,
+.input-sizer input,
+.input-sizer .textarea {
+  @include sizes(auto);
+  min-width: 1em;
+  grid-area: 1/2;
+  font: inherit;
+  margin: 0;
+  resize: none;
+  background: none;
+  appearance: none;
+}
+.input-sizer .textarea {
+  min-height: 20px;
+}
+
+.input-sizer::after {
+  content: attr(data-value) " ";
+  visibility: hidden;
+  white-space: pre-wrap;
+}
+
+.bottom-line {
+  @include sizes(80px, 3px);
+  position: relative;
+  left: 10px;
+  bottom: 2px;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, $color-purple2 0%, $color-salad2 100%);
+}
+
+.reg-btn {
+  @include rowing(null, center);
+  padding: 20px 0 80px;
+  border: none;
+  background-color: $color-clear;
+
+  > .reg-text-btn {
+    @include fonts($ginora-sans-semi-bold-font, $extra-mini-font, $color-purple2);
+  }
+
+  > .arrow-right-green {
+    @include sizes(25px, 12px);
+    margin-left: 30px;
+    color: $color-salad2;
+  }
+}

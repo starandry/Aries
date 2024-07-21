@@ -1,0 +1,45 @@
+.networks-list {
+  @include rowing(center);
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.item-networks {
+  padding: 0 10px 20px;
+
+  > .network-link {
+    @include fonts($main-font, $semi-mini-font, $color-grey3, $inscription-line-height);
+
+    &:hover {
+      color: $color-purple2;
+    }
+  }
+
+  > .active-network-link {
+    color: $color-purple2;
+  }
+}
+
+.basement {
+  @include rowing(center, center);
+
+  > .auth-protection {
+    padding: 30px 0 35px;
+    color: $color-grey3;
+  }
+
+  > .company-protection {
+    margin: 0 0 2px 4px;
+    padding-bottom: 2px;
+    border: {
+      bottom: 2px solid $color-purple2;
+      bottom-width: 1.5px;
+    }
+    color: $color-purple2;
+  }
+
+  > .auth-protection,
+  > .company-protection {
+    @include fonts($main-font, $extra-mini-font, null, $position-line-height);
+  }
+}

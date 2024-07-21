@@ -1,0 +1,12 @@
+@include desktop {
+  .menu {
+
+  }
+
+  .menu-list {
+    > .menu-list-left,
+    > .menu-list-right {
+      display: list-item;
+    }
+  }
+}

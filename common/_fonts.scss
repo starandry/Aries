@@ -1,0 +1,116 @@
+:root {
+  --normal_font-style: normal;
+  --swap_font-display: swap;
+}
+
+@font-face {
+  font-family: GinoraSans-light;
+  src: url("../fonts/GinoraSans/ginorasans-light.woff2") format("woff2"),
+  url("../fonts/GinoraSans/ginorasans-light.woff") format("woff");
+  font-style: var(--normal_font-style);
+  font-weight: var(--normal_font-style);
+  font-display: var(--swap_font-display);
+}
+
+@font-face {
+  font-family: GinoraSans-regular;
+  src: url("../fonts/GinoraSans/ginorasans-regular.woff2") format("woff2"),
+  url("../fonts/GinoraSans/ginorasans-regular.woff") format("woff");
+  font-style: var(--normal_font-style);
+  font-weight: var(--normal_font-style);
+  font-display: var(--swap_font-display);
+}
+
+@font-face {
+  font-family: GinoraSans-semi-bold;
+  src: url("../fonts/GinoraSans/ginorasans-semi-bold.woff2") format("woff2"),
+  url("../fonts/GinoraSans/ginorasans-semi-bold.woff") format("woff");
+  font-style: var(--normal_font-style);
+  font-weight: var(--normal_font-style);
+  font-display: var(--swap_font-display);
+}
+
+
+@font-face {
+  font-family: GinoraSans-bold;
+  src: url("../fonts/GinoraSans/ginorasans-bold.woff2") format("woff2"),
+  url("../fonts/GinoraSans/ginorasans-bold.woff") format("woff");
+  font-style: var(--normal_font-style);
+  font-weight: var(--normal_font-style);
+  font-display: var(--swap_font-display);
+}
+
+@font-face {
+  font-family: Gilroy-light;
+  src: url("../fonts/Gilroy/gilroy-light.woff2") format("woff2"),
+  url("../fonts/Gilroy/gilroy-light.woff") format("woff");
+  font-style: var(--normal_font-style);
+  font-weight: var(--normal_font-style);
+  font-display: var(--swap_font-display);
+}
+
+@font-face {
+  font-family: Gilroy-regular;
+  src: url("../fonts/Gilroy/gilroy-regular.woff2") format("woff2"),
+  url("../fonts/Gilroy/gilroy-regular.woff") format("woff");
+  font-style: var(--normal_font-style);
+  font-weight: var(--normal_font-style);
+  font-display: var(--swap_font-display);
+}
+
+@font-face {
+  font-family: Gilroy-medium;
+  src: url("../fonts/Gilroy/gilroy-medium.woff2") format("woff2"),
+  url("../fonts/Gilroy/gilroy-medium.woff") format("woff");
+  font-style: var(--normal_font-style);
+  font-weight: var(--normal_font-style);
+  font-display: var(--swap_font-display);
+}
+
+
+
+/*FONTS*/
+/*$main-font: DM Sans, sans-serif !default;
+$secondary-font: Montserrat, sans-serif !default;
+$semi-mini-font: 12px !default;
+$mini-font: 14px !default;
+$extra-mini-font: 16px !default;
+$semi-small-font: 18px !default;
+$small-font: 20px !default;
+$extra-small-font: 22px !default;
+$semi-normal-font: 24px !default;
+$normal-font: 26px !default;
+$extra-normal-font: 28px !default;
+$semi-medium-font: 30px !default;
+$medium-font: 32px !default;
+$extra-medium-font: 34px !default;
+$semi-large-font: 36px !default;
+$large-font: 38px !default;
+$extra-large-font: 40px !default;
+$semi-mega-font: 42px !default;
+$mega-font: 44px !default;
+$extra-mega-font: 46px !default;
+$semi-ultra-font: 48px !default;
+$ultra-font: 50px !default;
+$extra-ultra-font: 52px !default;
+$semi-display-font: 54px !default;
+$display-font: 56px !default;
+$extra-display-font: 58px !default;*/
+
+$thin-font-weight: 100 !default;
+$extra-light-font-weight: 200 !default;
+$light-font-weight: 300 !default;
+$regular-font-weight: 400 !default;
+$medium-font-weight: 500 !default;
+$semi-bold-font-weight: 600 !default;
+$bold-font-weight: 700 !default;
+$extra-bold-font-weight: 800 !default;
+$heavy-font-weight: 900 !default;
+
+//microFont  tinyFont  miniFont  smallFont
+//normalFont  mediumFont
+//largeFont hugeFont  megaFont ultraFont displayFont
+//
+// `semi`
+// `extra`
+// `extraExtra`

@@ -1,0 +1,44 @@
+.robot {
+  margin-bottom: 20px;
+}
+
+.robotics-inscription {
+  @include fonts($main-font, $semi-mini-font, $color-grey3, $inscription-line-height);
+  letter-spacing: 4px;
+  opacity: .7;
+}
+
+.robotics-title {
+  @include fonts($main-font, $normal-font, $primary-title-color, $h3-title-line-height);
+  padding: 10px 0 20px;
+}
+
+.robotics-desc {
+  @include fonts($secondary-font, $extra-mini-font, $secondary-title-color, $paragraph-line-height);
+  padding-bottom: 40px;
+}
+
+.link-robotics {
+  @include rowing(null, center);
+  padding-bottom: 80px;
+
+  &:hover {
+    > .text-robotics {
+      color: $color-salad2;
+    }
+
+    > .arrow-right-green {
+      color: $color-purple2;
+    }
+  }
+
+  > .text-robotics {
+    @include fonts($ginora-sans-semi-bold-font, $extra-mini-font, $color-purple2);
+    padding-right: 15px;
+  }
+
+  > .arrow-right-green {
+    @include sizes(25px, 12px);
+    color: $color-salad2;
+  }
+}
