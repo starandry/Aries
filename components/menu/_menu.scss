@@ -4,12 +4,15 @@
 }
 
 .menu-list {
-  @include rowing(space-between);
+  @include rowing(space-between, center);
 
-  > .menu-list-left,
-  > .menu-list-right {
+  > .menu-list-left {
     display: none;
   }
+}
+
+.item-right {
+  display: none;
 }
 
 #menu-toggle {

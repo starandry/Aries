@@ -1,6 +1,6 @@
 @include desktop {
   .menu {
-
+    padding: 31px 60px;
   }
 
   .menu-list {
@@ -8,5 +8,17 @@
     > .menu-list-right {
       display: list-item;
     }
+  }
+
+  .item-right {
+    display: list-item;
+  }
+
+  .left-list, .right-list {
+    @include rowing();
+  }
+
+  .link-menu {
+    @include fonts($main-font, $extra-mini-font, $color-white2);
   }
 }
