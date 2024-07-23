@@ -10,8 +10,17 @@
     }
   }
 
+  .item-left {
+    padding-right: 30px;
+  }
+
   .item-right {
     display: list-item;
+    padding-left: 30px;
+  }
+
+  .menu-toggle {
+    padding-left: 5px;
   }
 
   .left-list, .right-list {
@@ -20,5 +29,13 @@
 
   .link-menu {
     @include fonts($main-font, $extra-mini-font, $color-white2);
+  }
+
+  .box-icon-menu {
+    @include sizes(12px, 12px);
+
+    > .icon-menu {
+      margin-bottom: 2px;
+    }
   }
 }
