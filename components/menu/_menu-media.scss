@@ -4,6 +4,10 @@
   }
 
   .menu-list {
+    > .menu-list-left {
+      @include sizes(null, 14px);
+    }
+
     > .menu-list-left,
     > .menu-list-right {
       display: list-item;
@@ -15,16 +19,22 @@
   }
 
   .item-right {
+    @include sizes(null, 14px);
     display: list-item;
     padding-left: 30px;
   }
 
   .menu-toggle {
+    @include sizes(null, 12px);
     padding-left: 5px;
   }
 
-  .left-list, .right-list {
+  .left-list {
     @include rowing();
+  }
+
+  .right-list {
+    @include rowing(null, center);
   }
 
   .link-menu {
