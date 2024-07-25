@@ -4,41 +4,40 @@
   }
 
   .menu-list {
-    > .menu-list-left {
+    justify-content: start;
+
+    > .menu-item {
+      display: inline-block;
       @include sizes(null, 14px);
     }
 
-    > .menu-list-left,
-    > .menu-list-right {
-      display: list-item;
+    > .menu-item-logo {
+      margin: 0 auto;
+    }
+
+    > .menu-item-icon {
+      @include sizes(null, 12px);
+      padding-left: 5px;
+    }
+
+    > .menu-item.-left {
+      padding-right: 30px;
+    }
+
+    > .menu-item.-right {
+      padding-left: 30px;
     }
   }
 
-  .item-left {
-    padding-right: 30px;
-  }
+  #menu-toggle:checked + .menu-list {
+    > .menu-item-icon {
+      padding-top: 8.1px;
+    }
 
-  .item-right {
-    @include sizes(null, 14px);
-    display: list-item;
-    padding-left: 30px;
-  }
-
-  .menu-toggle {
-    @include sizes(null, 12px);
-    padding-left: 5px;
-  }
-
-  .left-list {
-    @include rowing();
-  }
-
-  .right-list {
-    @include rowing(null, center);
-  }
-
-  .link-menu {
-    @include fonts($main-font, $extra-mini-font, $color-white2);
+    > .menu-item.-left,
+    > .menu-item.-right {
+      padding-top: 30px;
+    }
   }
 
   .box-icon-menu {

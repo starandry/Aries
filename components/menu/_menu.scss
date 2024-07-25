@@ -6,22 +6,48 @@
 .menu-list {
   @include rowing(space-between, center);
 
-  > .menu-list-left {
+  > .menu-item {
     display: none;
+  }
+
+  > .menu-item-icon {
+    @include sizes(null, 20px);
   }
 }
 
-.item-right {
-  display: none;
-}
-
-.menu-toggle {
-  line-height: 0;
+.link-menu {
+  @include fonts($main-font, $extra-mini-font, $color-white2);
 }
 
 #menu-toggle {
-  /*display: none;*/
+  display: none;
 }
+#menu-toggle:checked + .menu-list {
+  flex-direction: column;
+
+  > .menu-item-logo {
+    display: none;
+  }
+
+  > .menu-item-icon {
+    order: -1;
+    margin-left: auto;
+    padding-top: 4.1px;
+  }
+
+  > .menu-item.-left {
+    &:first-child {
+      padding-top: 40px;
+    }
+  }
+
+  > .menu-item.-left,
+  > .menu-item.-right {
+    display: inline;
+    padding: 15px 0;
+  }
+}
+
 
 .logo {
   @include sizes(85px, 25px);
