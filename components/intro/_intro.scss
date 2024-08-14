@@ -14,9 +14,9 @@
 
 .box-spiral {
   @include rowing(flex-end);
-  max-height: 190px;
+  @include sizes(null, 190px);
+}
 
-  > .spiral {
-    transform: translateY(-70px);
-  }
+.spiral {
+  transform: translateY(-70px);
 }
