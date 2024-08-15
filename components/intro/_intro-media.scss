@@ -1,9 +1,13 @@
-@include desktop {
+@include tablet {
   .hero {
     position: absolute;
-    top: 58%;
+    top: 30%;
     left: 50%;
+    display: block;
     transform: translate(-50%, -50%);
+    aspect-ratio: 480 / 311;
+    width: 100%;
+    height: auto;
   }
 
   .intro {
@@ -13,6 +17,50 @@
   .page-title {
     position: relative;
     text-align: center;
+    max-width: 660px;
+    line-height: 1.2;
+  }
+
+  .box-spiral {
+    align-self: end;
+  }
+
+  .spiral {
+    width: clamp(192px, calc(192px + (96 * ((100vw - 700px) / 400))), 288px);
+    height: clamp(240px, calc(240px + (120 * ((100vw - 700px) / 400))), 360px);
+    transform: translateY(-9vw);
+  }
+}
+
+@include laptop {
+  .page-title {
+    max-width: 750px;
+    padding-top: 40px;
+  }
+
+  .spiral {
+    width: clamp(251px, calc(251px + (126 * ((100vw - 1100px) / 340))), 377px);
+    height: clamp(314px, calc(314px + (157 * ((100vw - 1100px) / 340))), 471px);
+  }
+
+  .link-scroll {
+    display: inline;
+    transform: translateY(-5em);
+
+    > .icon-scroll {
+      @include sizes(13px);
+    }
+  }
+}
+
+@include desktop {
+  .hero {
+    top: 58%;
+    left: 50%;
+    width: unset;
+  }
+
+  .page-title {
     padding-top: 1em;
     max-width: 840px;
     font-size: 82px;
@@ -21,7 +69,6 @@
 
   .box-spiral {
     @include sizes(null, 350px);
-    align-self: end;
   }
 
   .spiral {
@@ -29,7 +76,10 @@
   }
 
   .link-scroll {
-    display: inline;
     transform: translateY(-12em);
+
+    > .icon-scroll {
+      @include sizes(15px);
+    }
   }
 }

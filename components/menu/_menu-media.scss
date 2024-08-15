@@ -1,19 +1,10 @@
-@include desktop {
-  .hero {
-    display: block;
-  }
-
-  .header {
-    padding-top: 30px;
-  }
-
+@include tablet {
   .menu {
     position: relative;
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 31px 60px;
   }
+}
 
+@include laptop {
   .menu-list {
     justify-content: start;
 
@@ -32,11 +23,11 @@
     }
 
     > .menu-item.-left {
-      padding-right: 30px;
+      padding-right: clamp(40px, calc(40px + (40 * ((100vw - 1100px) / 340))), 80px);
     }
 
     > .menu-item.-right {
-      padding-left: 30px;
+      padding-left: clamp(40px, calc(40px + (40 * ((100vw - 1100px) / 340))), 80px);
     }
   }
 
@@ -57,5 +48,29 @@
     > .icon-menu {
       margin-bottom: 2px;
     }
+  }
+}
+
+@include desktop {
+  .hero {
+    display: block;
+  }
+
+  .header {
+    padding-top: 30px;
+  }
+
+  .menu {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 31px 60px;
+  }
+
+  .menu-item.-left {
+    padding-right: 30px;
+  }
+
+  .menu-item.-right {
+    padding-left: 30px;
   }
 }

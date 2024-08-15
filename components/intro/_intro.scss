@@ -3,8 +3,19 @@
 }
 
 .page-title {
-  @include fonts($ginora-sans-bold-font, $semi-mega-font, $primary-title-color, $h1-title-line-height);
-  background: conic-gradient(from 180deg at 50% 50%, $secondary-color -160.13deg, $primary-color 42.37deg, $secondary-color 199.87deg, $primary-color 402.37deg);
+  @include fonts(
+    $ginora-sans-bold-font,
+    clamp(42px, calc(42px + (33 * ((100vw - 360px) / 1080))), 75px),
+    $primary-title-color,
+    clamp(56px, calc(56px + (6 * ((100vw - 360px) / 340))), 62px)
+  );
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    $secondary-color -160.13deg,
+    $primary-color 42.37deg,
+    $secondary-color 199.87deg,
+    $primary-color 402.37deg
+  );
   background-clip: text;
 
   > .ai {
