@@ -1,14 +1,19 @@
 @include desktop {
   .hero {
     position: absolute;
-    top: 50%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .intro {
+    @include rowing(null, center, column);
   }
 
   .page-title {
     position: relative;
     text-align: center;
+    padding-top: 1em;
     max-width: 840px;
     font-size: 82px;
     line-height: 96px;
@@ -16,5 +21,15 @@
 
   .box-spiral {
     @include sizes(null, 350px);
+    align-self: end;
+  }
+
+  .spiral {
+    transform: translate(4em, -8em);
+  }
+
+  .link-scroll {
+    display: inline;
+    transform: translateY(-12em);
   }
 }
