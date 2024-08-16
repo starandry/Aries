@@ -1,3 +1,8 @@
+.decisions-photo {
+  @include sizes(88.89vw);
+  margin-top: 5vw;
+}
+
 .decisions-title {
   @include fonts($main-font, $semi-large-font, $primary-title-color, $h2-title-line-height);
   padding: 40px 0 30px;

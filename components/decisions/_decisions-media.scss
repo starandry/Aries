@@ -1,0 +1,90 @@
+@include tablet {
+  .decisions {
+    margin-top: 9vw;
+  }
+}
+
+@include laptop {
+  .decisions {
+    @include rowing(space-between);
+  }
+
+  .decisions-photo {
+    @include sizes(60vw);
+    margin-top: 2vw;
+  }
+
+  .decisions-photo-wrap {
+    @include sizes(55vw);
+    order: 1;
+  }
+
+  .decisions-wrap {
+    @include sizes(32vw);
+  }
+}
+
+@include desktop {
+  .decisions {
+    @include rowing(unset, null, column);
+    position: relative;
+    margin: 0;
+    padding: 7.45% 0 31.03% 0;
+  }
+
+  .decisions-photo-wrap {
+    @include sizes(unset);
+    position: relative;
+    z-index: 1;
+    order: unset;
+    align-self: end;
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      display: block;
+      width: 91px;
+      height: 91px;
+      background: radial-gradient(
+                      50% 50% at 50% 50%,
+                      $color-salad2 35.25%,
+                      $color-purple2 100%
+      );
+      filter: blur(55px);
+    }
+
+    &::before {
+      left: 20px;
+      top: 70px;
+    }
+
+    &::after {
+      right: 200px;
+      bottom: 70px;
+      opacity: 0.5;
+    }
+
+    > .decisions-photo {
+      @include sizes(992px);
+      margin-top: unset;
+      /*visibility: hidden;*/
+    }
+  }
+
+  .decisions-wrap {
+    position: absolute;
+    z-index: 1;
+    top: 360px;
+  }
+
+  .decisions-title {
+    @include fonts(null, $desktop-font, null, $h2-desktop-line-height);
+  }
+
+  .decisions-title,
+  .decisions-desc {
+    padding-bottom: 60px;
+  }
+}
