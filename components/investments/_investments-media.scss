@@ -1,0 +1,43 @@
+@include tablet {
+  .investments-title {
+    padding: 50px 0 30px;
+  }
+
+  .investments-desc {
+    > br {
+      display: none;
+    }
+  }
+}
+
+@include laptop {
+  .investments-title {
+    padding: 11vw 0 30px;
+  }
+
+  .investments-desc {
+    padding-bottom: 5.45vw;
+  }
+}
+
+@include desktop {
+  .investments {
+    @include rowing();
+    padding-top: 50px;
+  }
+
+  .investments-title {
+    @include sizes(730px);
+    @include fonts(null, $desktop-font, null, $h2-desktop-line-height);
+    flex-shrink: 0;
+    padding: 0 0 30px;
+
+    > br {
+      display: inline;
+    }
+  }
+
+  .investments-desc {
+    padding-top: 20px;
+  }
+}

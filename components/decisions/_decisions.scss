@@ -1,5 +1,5 @@
 .decisions-photo {
-  @include sizes(88.89vw);
+  @include sizes(100%);
   margin-top: 5vw;
 }
 
@@ -11,6 +11,10 @@
 .decisions-desc {
   @include fonts($secondary-font, $extra-mini-font, $secondary-title-color, $paragraph-line-height);
   padding: 0 10px 30px 0;
+
+  > br {
+    display: none;
+  }
 }
 
 .link-project {

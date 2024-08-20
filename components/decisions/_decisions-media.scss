@@ -74,9 +74,16 @@
   }
 
   .decisions-wrap {
+    @include sizes(34vw);
     position: absolute;
     z-index: 1;
     top: 360px;
+
+    > .decisions-desc {
+      > br {
+        display: inline;
+      }
+    }
   }
 
   .decisions-title {

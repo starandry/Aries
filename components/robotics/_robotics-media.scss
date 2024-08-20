@@ -1,0 +1,44 @@
+@include tablet {
+  .robotics {
+    @include rowing(null, center);
+  }
+
+  .robot {
+    @include sizes(41vw);
+  }
+
+  .robotics-wrap {
+    padding-left: 50px;
+  }
+
+  .robotics-desc {
+    > br {
+      display: none;
+    }
+  }
+}
+
+@include laptop {
+  .robotics {
+    padding-top: 50px;
+  }
+}
+
+@include desktop {
+  .robot {
+    @include sizes(575px);
+  }
+
+  .robotics-wrap {
+    padding-left: 80px;
+  }
+
+  .robotics-inscription {
+    @include fonts(null, $extra-mini-font);
+  }
+
+  .robotics-title {
+    @include fonts(null, $mega-font, null, $h3-desktop-line-height);
+  }
+
+}

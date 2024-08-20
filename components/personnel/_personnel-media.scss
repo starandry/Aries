@@ -1,0 +1,47 @@
+@include tablet {
+  .personnel {
+    @include rowing(null, center);
+    padding: 1.82vw 0 7.14vw;
+  }
+
+  .personnel-photo-wrap {
+    order: 1;
+  }
+
+  .personnel-wrap {
+    padding-right: 50px;
+  }
+
+  .personnel-desc {
+    > br {
+      display: none;
+    }
+  }
+
+  .link-personnel {
+    padding-bottom: 50px;
+  }
+}
+
+@include desktop {
+  .personnel {
+    padding: 0 0 15%;
+  }
+
+  .personnel-photo-wrap {
+    @include sizes(550px);
+    flex-shrink: 0;
+  }
+
+  .personnel-wrap {
+    padding-right: 98px;
+  }
+
+  .personnel-inscription {
+    @include fonts(null, $extra-mini-font)
+  }
+
+  .personnel-title {
+    @include fonts(null, $mega-font, null, $h3-desktop-line-height);
+  }
+}
