@@ -6,7 +6,9 @@
   background-color: $color-grey;
 }
 
-._flex-container {
-  @include rowing(space-between);
-  padding: 10% 0 7%;
+@include desktop {
+  ._flex-container {
+    @include rowing(space-between);
+    padding: 10% 0 7%;
+  }
 }

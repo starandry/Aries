@@ -1,0 +1,46 @@
+@include laptop {
+  .footer-nav {
+    @include rowing(space-evenly, null, row);
+
+    > .policy-links {
+      padding: 0;
+    }
+  }
+}
+
+@include desktop {
+  .footer-nav {
+    @include rowing(space-between);
+    padding: 20px 0 90px;
+  }
+
+  .social-links {
+    > .network-link {
+      padding-left: 30px;
+    }
+  }
+
+  .policy-links {
+    > .network-link {
+      padding-right: 30px;
+    }
+  }
+
+  .social-links, .policy-links {
+    @include sizes(unset);
+
+    > .network-link {
+      font-size: $extra-mini-font;
+      letter-spacing: 4px;
+    }
+  }
+
+  .basement {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    > .company-protection {
+      border-bottom: unset;
+    }
+  }
+}

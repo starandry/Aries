@@ -36,6 +36,7 @@
 .text-message {
   @include fonts($secondary-font, $mini-font, $color-grey3, $position-line-height);
   padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .name-text,

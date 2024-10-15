@@ -1,0 +1,41 @@
+@include tablet {
+  .title-reg {
+    @include sizes(unset);
+  }
+
+  .custom-br {
+    display: none;
+  }
+}
+
+@include laptop {
+  .registration {
+    @include rowing();
+  }
+
+  .text-block {
+    @include sizes(60%);
+
+    .title-reg {
+      @include sizes(80%);
+      font-size: $desktop-font;
+      line-height: $h2-desktop-line-height;
+    }
+
+    .desc-reg {
+      @include sizes(72%);
+    }
+  }
+
+  .contact-form {
+    @include sizes(35%);
+    padding-top: 40px;
+  }
+
+  .label-name,
+  .label-email,
+  .text-message {
+    text-transform: unset;
+    font-size: $extra-small-font;
+  }
+}

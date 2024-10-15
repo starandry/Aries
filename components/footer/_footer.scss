@@ -1,14 +1,18 @@
-.networks-list {
-  @include rowing(center);
-  flex-wrap: wrap;
-  padding-bottom: 40px;
+.footer-nav {
+  @include rowing(null, center, column);
 }
 
-.item-networks {
-  padding: 0 10px 20px;
+.policy-links {
+  padding-bottom: 25px;
+}
+
+.social-links, .policy-links {
+  @include rowing(space-evenly);
+  @include sizes(320px);
 
   > .network-link {
     @include fonts($main-font, $semi-mini-font, $color-grey3, $inscription-line-height);
+    padding-bottom: 25px;
 
     &:hover {
       color: $color-purple2;

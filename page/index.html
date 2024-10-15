@@ -545,27 +545,29 @@
     </section>
     <div class="container">
       <section class="registration">
-        <h2 class="title-reg">
-          We Help You To Turn
-          Ideas Into Reality.
-        </h2>
-        <p class="desc-reg">
-          if your research processes have unique <br/>
-          features, and you are looking for an <br/>
-          individual funding solution - <br/>
-          we can help.
-        </p>
-        <form action="" method="POST">
+        <div class="text-block">
+          <h2 class="title-reg">
+            We Help You To Turn
+            Ideas Into Reality.
+          </h2>
+          <p class="desc-reg">
+            if your research processes have unique <br class="custom-br"/>
+            features, and you are looking for an <br class="custom-br"/>
+            individual funding solution - <br class="custom-br"/>
+            we can help.
+          </p>
+        </div>  <!--text-block-->
+        <form action="" method="POST" class="contact-form">
           <div class="group-name">
-            <label class="label-name" for="name">NAME*</label>
+            <label class="label-name" for="name">Name*</label>
             <input class="name-text" type="text" id="name"/>
           </div>   <!--group-name-->
           <div class="group-email">
-            <label class="label-email" for="email">EMAIL*</label>
+            <label class="label-email" for="email">Email*</label>
             <input class="email-text" type="email" id="email"/>
           </div>   <!-- group-email-->
           <div class="group-message">
-            <span class="text-message">MESSAGE*</span>
+            <span class="text-message">Message*</span>
             <label class="input-sizer stacked">
               <textarea class="textarea" oninput="this.parentNode.dataset.value = this.value" rows="1"></textarea>
             </label>
@@ -585,26 +587,18 @@
 <footer>
   <div class="block _grey-bg">
     <div class="container">
-      <ul class="networks-list">
-        <li class="item-networks">
+      <div class="footer-nav">
+        <div class="social-links">
           <a href="" class="network-link active-network-link">LINKEDIN</a>
-        </li>
-        <li class="item-networks">
           <a href="" class="network-link">REDDIT</a>
-        </li>
-        <li class="item-networks">
           <a href="" class="network-link">FACEBOOK</a>
-        </li>
-        <li class="item-networks">
           <a href="" class="network-link">TWITTER</a>
-        </li>
-        <li class="item-networks">
+        </div>  <!--social-links-->
+        <div class="policy-links">
           <a href="" class="network-link">PRIVACY &amp; POLICY</a>
-        </li>
-        <li class="item-networks">
           <a href="" class="network-link">COOKIES POLICY</a>
-        </li>
-      </ul>
+        </div>  <!--policy-links-->
+      </div>
     </div>  <!--container-->
     <div class="separator"></div>   <!--separator-->
     <div class="basement">
