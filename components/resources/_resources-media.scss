@@ -28,4 +28,16 @@
       font-size: $desktop-font;
     }
   }
+
+  .swiper-nav {
+    order: 1;
+  }
+
+  .box-btn-left {
+    @include sizes(62px, 16px);
+  }
+
+  .box-btn-right {
+    @include sizes(124px, 16px);
+  }
 }

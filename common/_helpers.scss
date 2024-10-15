@@ -5,3 +5,8 @@
 ._steel-bg {
   background-color: $color-grey;
 }
+
+._flex-container {
+  @include rowing(space-between);
+  padding: 10% 0 7%;
+}
