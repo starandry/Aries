@@ -38,6 +38,10 @@
   color: $color-salad2;
 }
 
+.long-right-arrow-desktop {
+  display: none;
+}
+
 .arrow-internship {
   margin-left: 65px;
 }
@@ -72,6 +76,10 @@
       background: linear-gradient(92.73deg, $color-purple2 0%, $color-salad2 100%);
       background-clip: text;
       color: $color-clear;
+    }
+
+    > .line-break-desktop {
+      display: none;
     }
   }
 

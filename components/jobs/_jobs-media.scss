@@ -4,7 +4,7 @@
   }
 
   .jobs-title {
-    padding: 30px 0 100px;
+    padding: 40px 0 100px;
   }
 
   .wrap-jobs {
@@ -36,12 +36,87 @@
 
 @include desktop {
   .jobs-title {
-    @include fonts($ginora-sans-regular-font, $desktop-font)
+    @include fonts($ginora-sans-regular-font, $desktop-font);
+    transform: translateX(-75px);
+  }
+
+  .wrap-jobs {
+    margin-right: 5%;
+    padding: 10% 0 65%;
+  }
+
+  .card-jobs.-first {
+    top: 15%;
+  }
+
+  .card-jobs.-second {
+    top: 33%;
+  }
+
+  .card-jobs.-third {
+    top: 51%;
   }
 
   .card-jobs {
     > .inscription-jobs {
-      @include fonts(null, $extra-mini-font);
+      @include fonts($main-font, $extra-mini-font);
+      padding-bottom: 0;
     }
+  }
+
+  .link-card-jobs {
+    > .card-title-jobs {
+      @include fonts($main-font, $mega-font, $primary-title-color, $title-jobs-line-height);
+
+      > .line-break {
+        display: none;
+      }
+
+      > .line-break-desktop {
+        display: block;
+      }
+    }
+  }
+
+  .arrow-internship,
+  .arrow-fulltime,
+  .arrow-developer {
+     display: none;
+  }
+
+  .arrow-internship-desktop {
+    margin-left: 5em;
+  }
+
+  .arrow-fulltime-desktop {
+    margin-left: 6.5em;
+  }
+
+  .arrow-developer-desktop {
+    margin-left: 10em;
+  }
+
+  .long-right-arrow-desktop {
+    @include sizes(55px, 125px);
+    display: block;
+    color: $color-salad2;
+  }
+
+  .desc-jobs {
+    @include fonts($gilroy-medium-font, $extra-mini-font);
+  }
+
+  .intern, .startup {
+    &::before {
+      content: '';
+      display: block;
+      background-color: white;
+      width: 100%;
+      height: 50px;
+    }
+  }
+
+  .text-job {
+    @include fonts($main-font, $extra-small-font);
   }
 }
