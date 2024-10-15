@@ -3,8 +3,8 @@
   background: linear-gradient(
                   to right,
                   $color-clear 0%,
-                  $color-purple3 21.14%,
-                  $color-salad3 80%,
+                  rgba(125, 155, 250, .5) 21.14%,
+                  rgba(96, 219, 212, .5) 80%,
                   $color-clear 100%
   );
 }
@@ -12,7 +12,45 @@
 .separator.-jobs {
   background: linear-gradient(
                   to right,
-                  $color-purple3,
-                  $color-salad3
+                  rgba(125, 155, 250, .5),
+                  rgba(96, 219, 212, .5)
   );
+}
+
+.separator.-vert {
+  display: none;
+}
+
+.separator.-mind {
+  display: none;
+}
+
+@include laptop {
+  .separator.-vert {
+    @include sizes(1px);
+    display: block;
+    align-self: stretch;
+    background: linear-gradient(
+                    to bottom,
+                    rgba(128, 147, 255, 0),
+                    rgba(125, 155, 250, .5) 23.208%,
+                    rgba(96, 219, 212, .5) 85.8125%,
+                    rgba(92, 228, 207, 0) 100%
+    );
+  }
+
+  .separator.-jobs {
+    display: none;
+  }
+}
+
+@include desktop {
+  .separator.-vert {
+    @include sizes(null, unset);
+    margin-left: 55px;
+  }
+
+  .separator.-mind {
+    display: block;
+  }
 }

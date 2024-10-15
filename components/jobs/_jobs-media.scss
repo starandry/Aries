@@ -1,0 +1,47 @@
+@include laptop() {
+  .jobs {
+    position: relative;
+  }
+
+  .jobs-title {
+    padding: 30px 0 100px;
+  }
+
+  .wrap-jobs {
+    margin-inline: unset;
+    margin: 0 15% 0 auto;
+    padding: 5% 0 30%;
+  }
+
+  .card-jobs, .link-jobs-card {
+    position: absolute;
+  }
+
+  .card-jobs.-first {
+    top: 10%;
+  }
+
+  .card-jobs.-second {
+    top: 30%;
+  }
+
+  .card-jobs.-third {
+    top: 50%;
+  }
+
+  .link-jobs-card {
+    top: 70%;
+  }
+}
+
+@include desktop {
+  .jobs-title {
+    @include fonts($ginora-sans-regular-font, $desktop-font)
+  }
+
+  .card-jobs {
+    > .inscription-jobs {
+      @include fonts(null, $extra-mini-font);
+    }
+  }
+}

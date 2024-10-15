@@ -38,6 +38,18 @@
   color: $color-salad2;
 }
 
+.arrow-internship {
+  margin-left: 65px;
+}
+
+.arrow-fulltime {
+  margin-left: 17px;
+}
+
+.arrow-developer {
+  margin-left: 50px;
+}
+
 .card-jobs {
   @include rowing(null,  null, column);
   padding: 40px 0;
@@ -51,7 +63,7 @@
 }
 
 .link-card-jobs {
-  @include rowing(space-between,  center);
+  @include rowing(start,  center);
 
   > .card-title-jobs {
     @include fonts($main-font, $normal-font, $primary-title-color, $h3-title-line-height);

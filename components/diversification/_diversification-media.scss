@@ -1,0 +1,124 @@
+@include tablet {
+  .brand-list {
+    @include rowing(center);
+  }
+
+  .divers-list-1, .divers-list-2 {
+    @include sizes(620px);
+  }
+}
+
+@include laptop {
+  .divers-list-1, .divers-list-2 {
+    @include sizes(485px);
+
+    > .diver-top {
+      order: 0;
+    }
+
+    > .diver-middle {
+      order: 2;
+    }
+
+    > .diver-bottom {
+      order: 3;
+    }
+
+    > .diver-special {
+      order: 1;
+    }
+  }
+
+  .link-divers {
+    padding-inline: 60px;
+  }
+}
+
+@include desktop {
+  .divers-title {
+    @include fonts(null, $desktop-font, null, $h2-desktop-line-height);
+    padding-top: 30px;
+  }
+
+  .divers-list-1, .divers-list-2 {
+    @include sizes(50%);
+  }
+
+  .link-divers {
+    padding: 60px;
+  }
+
+  .box-icon-divers {
+    > .icon-divers {
+      @include sizes(30px);
+    }
+  }
+
+  .box-atom {
+    @include sizes(null, 27px);
+
+    > .atom {
+      @include sizes(null, 27.3px);
+    }
+  }
+
+  .box-oracle {
+    @include sizes(null, 28px);
+
+    > .oracle {
+      @include sizes(null, 28.575px);
+    }
+  }
+
+  .box-tindo {
+    @include sizes(null, 27px);
+
+    > .tindo {
+      @include sizes(null, 27.39px);
+    }
+  }
+
+  .box-kawaski {
+    @include sizes(null, 30px);
+
+    > .kawaski {
+      @include sizes(null, 30px);
+    }
+  }
+
+  .text-divers {
+    @include fonts(null, $semi-large-font);
+  }
+
+  .box-jarvice {
+    @include sizes(null, 30px);
+
+    > .jarvice {
+      @include sizes(null, 30px);
+    }
+  }
+
+  .box-cypher {
+    @include sizes(null, 30px);
+
+    > .cypher {
+      @include sizes(null, 30px);
+    }
+  }
+
+  .box-ordix {
+    @include sizes(null, 26px);
+
+    > .ordix {
+      @include sizes(null, 26px);
+    }
+  }
+
+  .box-raxon {
+    @include sizes(null, 25px);
+
+    > .raxon {
+      @include sizes(null, 25.2px);
+    }
+  }
+}

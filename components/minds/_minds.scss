@@ -1,5 +1,10 @@
+.wrapper-geniuses {
+  @include rowing(center);
+}
+
 .list-geniuses {
   @include rowing(space-between);
+  @include sizes(320px);
   flex-wrap: wrap;
   padding-top: 60px;
 }
@@ -29,6 +34,10 @@
 
 .gen-roberto {
   padding-top: 50px;
+}
+
+.twilight-spiral {
+  display: none;
 }
 
 .minds-title {
