@@ -5,6 +5,10 @@
 
 .cards-resources {
   padding: 0 20px;
+
+  > .img-slides {
+    @include sizes(100%, auto);
+  }
 }
 
 .date {

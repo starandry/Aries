@@ -1,0 +1,31 @@
+@include tablet {
+  .break-resources {
+    display: none;
+  }
+}
+
+@include desktop {
+  .title-resources {
+    padding: 40px 0 100px;
+    font-size: $desktop-font;
+  }
+
+  .mySwiper {
+    width: 117%;
+    margin-left: -12%;
+  }
+
+  .date {
+    font-size: $extra-mini-font;
+  }
+
+  .title-card-resources {
+    display: inline;
+    font-size: $mega-font;
+    line-height: $h3-desktop-line-height;
+
+    > .highlight {
+      font-size: $desktop-font;
+    }
+  }
+}
